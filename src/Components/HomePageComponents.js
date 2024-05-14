@@ -1,8 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import HomepageNavbar from './HomepageNavbar'
 
 function HomePageComponents() {
   return (
-    <div>HomePageComponents</div>
+    <>
+        <HomepageNavbar/>
+        <Outlet/>
+    </>
   )
 }
 
